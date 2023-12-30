@@ -1,0 +1,240 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #7A808D;
+  padding: 20px 70px;
+}
+
+.footer .left,
+.footer .right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.company-help-care-wrapper {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 40px;
+}
+
+.social-platforms-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.section.legal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal ul li a {
+  color: #6B7280;
+}
+
+.section.legal img {
+  height: 30px;
+}
+
+.section.legal a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.company-info ul,
+.help-support ul,
+.customer-care ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.socials ul,
+.platforms ul {
+  display: flex;
+  gap: 10px;
+}
+
+.platforms ul li {
+  color: #000;
+  font-size: larger;
+}
+
+.socials ul li {
+  background-color: #1F2937;
+  border-radius: 50%;
+  color: white;
+  padding: 5px 10px;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.subscription-form h5,
+.payment-type h5 {
+  color: #000;
+}
+
+.subscription-form form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.subscription-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border: 1px solid #1F2937;
+
+}
+
+.subscription-form button[type="submit"] {
+  background-color: #1F2937;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.subscription-form button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.subscription-form p {
+  font-size: 12px;
+  text-align: start;
+}
+
+.payment-type ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.payment-type ul li {
+  width: 10%;
+  border-radius: 8px;
+  background-color: #0000;
+  padding: 8px;
+}
+
+.payment-type ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: unset;
+}
+
+.legal ul li {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .left,
+  .footer .right {
+    width: 100%;
+  }
+
+  .company-help-care-wrapper,
+  .social-platforms-wrapper {
+    flex-direction: column;
+    text-align: center;
+      gap: 10px;
+    }
+
+    .section {
+      width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section h3 {
+    font-size: 18px;
+  }
+
+  .payment-type ul li {
+    width: 5%;
+    margin: unset;
+    padding: 3px;
+  }
+
+  .subscription-form input[type="email"] {
+    width: 100%;
+    margin-right: 0;
+  }
+  .subscription-form p {
+    font-size: 7px;
+    text-align: start;
+}
+  .socials ul,
+  .platforms ul {
+    justify-content: center;
+  }
+
+  .section.payment-type h5 {
+    text-align: center;
+  }
+
+  .legal ul {
+    justify-content: center;
+    padding: unset;
+  }
+  .legal h5{
+    text-align: center;
+  }
+  .payment-type ul {
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .footer{
+    padding: 10px 10px;
+  }
+  .company-info ul, .help-support ul, .customer-care ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-between;
+}
+}
