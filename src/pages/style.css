@@ -291,6 +291,14 @@ body {
   color: #757575;
 }
 
+.img-gallery-main-img-wrapper {
+  display: flex;
+  /* justify-content: space-evenly; */
+  width: 100%;
+  gap: 30px;
+  align-items: start;
+}
+
 
 
 
@@ -345,7 +353,18 @@ body {
     width: 100%;
   }
   .product-image {
-    width: 150px;
+    width: 250px;
+}
+.img-gallery-main-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail-wrapper {
+  flex-direction: column;
+}
+.product-details {
+  max-width: 100%;
 }
 }
 

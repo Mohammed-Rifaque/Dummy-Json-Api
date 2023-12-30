@@ -6,7 +6,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { local } from '../helpers/projectHelpers';
 import { fetchProductsByIdApi } from "../api";
 import { useParams } from 'react-router-dom';
-import { Skeleton, Typography, Grid, Card, CardMedia,  } from '@mui/material';
+import { Skeleton, Typography, Grid, Card, CardMedia, Rating, } from '@mui/material';
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -66,26 +66,31 @@ const ProductDetail = () => {
             {ProductByID.title}
           </Typography>
           <div className="product-detail-wrapper">
-            <div className="image-gallery">
-              {ProductByID?.images?.map((image, index) => (
-                <Card key={index} className="thumbnail-card">
-                  <CardMedia
-                    component="img"
-                    alt={`Product Image ${index + 1}`}
-                    height="100%"  
-                    image={image}
-                  />
-                </Card>
-              ))}
-            </div>
-            <div className="main-image">
-              <div className="product-image">
-                <img src={ProductByID.thumbnail} alt={ProductByID.title} style={{ width: '100%', height: 'auto' }} />
+            <div className="img-gallery-main-img-wrapper">
+              <div className="image-gallery">
+                {ProductByID?.images?.map((image, index) => (
+                  <Card key={index} className="thumbnail-card">
+                    <CardMedia
+                      component="img"
+                      alt={`Product Image ${index + 1}`}
+                      height="100%"
+                      image={image}
+                    />
+                  </Card>
+                ))}
+              </div>
+              <div className="main-image">
+                <div className="product-image">
+                  <img src={ProductByID.thumbnail} alt={ProductByID?.title} style={{ width: '100%', height: 'auto' }} />
+                </div>
               </div>
             </div>
             <div className="product-details">
+              <div className="product-rating">
+                <Rating name="product-rating" value={ProductByID?.rating} readOnly />
+              </div>
               <Typography variant="body1" style={{ color: '#2196F3', fontWeight: 'bold', fontSize: '1rem' }}>
-                Price: ${ProductByID.price}
+                Price: ${ProductByID?.price}
               </Typography>
               <div className="like-button-containerr">
                 <button
@@ -96,12 +101,12 @@ const ProductDetail = () => {
                   <FavoriteIcon style={{ color: isFavorite ? "red" : "white" }} />
                 </button>
               </div>
-              <Typography variant="body1">{ProductByID.description}</Typography>
-              <Typography variant="body1">Discount: {ProductByID.discountPercentage}%</Typography>
-              <Typography variant="body1">Rating: {ProductByID.rating}</Typography>
-              <Typography variant="body1">Stock: {ProductByID.stock}</Typography>
-              <Typography variant="body1">Brand: {ProductByID.brand}</Typography>
-              <Typography variant="body1">Category: {ProductByID.category}</Typography>
+              <Typography variant="body1">{ProductByID?.description}</Typography>
+              <Typography variant="body1">Discount: {ProductByID?.discountPercentage}%</Typography>
+              <Typography variant="body1">Rating: {ProductByID?.rating}</Typography>
+              <Typography variant="body1">Stock: {ProductByID?.stock}</Typography>
+              <Typography variant="body1">Brand: {ProductByID?.brand}</Typography>
+              <Typography variant="body1">Category: {ProductByID?.category}</Typography>
             </div>
           </div>
         </>
