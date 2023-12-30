@@ -21,8 +21,8 @@ const App = () => {
 
   useEffect(() => {
     const favorites = local.get("favorites");
-    favorites?.forEach((recipe) => {
-      dispatch(addToFavorites(recipe));
+    favorites?.forEach((item) => {
+      dispatch(addToFavorites(item));
     })
   }, [])
 
