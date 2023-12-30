@@ -4,11 +4,13 @@
   background-color: #f2f2f2;
   padding: 20px;
   color: #7A808D;
-  padding: 20px ;
+  padding: 20px;
 }
-.footer .container{
+
+.footer .container {
   display: flex;
 }
+
 .footer .left {
   width: 50%;
   display: flex;
@@ -180,9 +182,15 @@
     align-items: center;
   }
 
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer .left,
   .footer .right {
     width: 100%;
+    gap: 5px;
   }
 
   .company-help-care-wrapper,
