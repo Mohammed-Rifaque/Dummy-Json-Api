@@ -4,12 +4,20 @@
   background-color: #f2f2f2;
   padding: 20px;
   color: #7A808D;
-  padding: 20px 70px;
+  padding: 20px ;
+}
+.footer .container{
+  display: flex;
+}
+.footer .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.footer .left,
 .footer .right {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -181,11 +189,11 @@
   .social-platforms-wrapper {
     flex-direction: column;
     text-align: center;
-      gap: 10px;
-    }
+    gap: 10px;
+  }
 
-    .section {
-      width: 100%;
+  .section {
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -203,10 +211,12 @@
     width: 100%;
     margin-right: 0;
   }
+
   .subscription-form p {
     font-size: 7px;
     text-align: start;
-}
+  }
+
   .socials ul,
   .platforms ul {
     justify-content: center;
@@ -220,21 +230,30 @@
     justify-content: center;
     padding: unset;
   }
-  .legal h5{
+
+  .legal h5 {
     text-align: center;
   }
+
   .payment-type ul {
     justify-content: center;
     gap: 0px;
   }
 
-  .footer{
+  .footer {
     padding: 10px 10px;
   }
-  .company-info ul, .help-support ul, .customer-care ul {
+
+  .company-info ul,
+  .help-support ul,
+  .customer-care ul {
     display: flex;
     flex-direction: row;
-    gap: 0px;
-    justify-content: space-between;
-}
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .like-button-container {
+    left: 70%;
+  }
 }
