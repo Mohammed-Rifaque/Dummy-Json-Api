@@ -89,6 +89,11 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+body {
+  background-color: white;
+}
+
 .react-loading-div {
   position: fixed;
   padding: 0;
@@ -109,6 +114,7 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
 }
+
 .admin-dashboard .main-content.adm-dashboard {
   background: #f7f8fb;
   width: calc(100% - 10px);
