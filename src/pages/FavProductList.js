@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ProductCard from "./ProductCard.js";
 import "./style.css"; 
 import { selectFavorites } from "../redux/slicers/productSlice.js";

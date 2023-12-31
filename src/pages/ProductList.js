@@ -37,7 +37,7 @@ const ProductList = () => {
 
   useEffect(() => {
     dispatch(fetchProductsApi(setLoading,setImageLoading, queries));
-  }, [dispatch, queries.page, queries.category]);
+  }, [dispatch, queries.page, queries.category , queries]);
 
   const handleChange = (value) => {
     dispatch(setQueries({

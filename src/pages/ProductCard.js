@@ -9,7 +9,6 @@ import {
   selectFavorites,
 } from "../redux/slicers/productSlice";
 import { local } from "../helpers/projectHelpers";
-import { useState } from 'react';
 import { DETAIL } from '../config/constant/routePathConstants';
 
 const ProductCard = ({ product, setImageLoading, imageLoading }) => {

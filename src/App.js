@@ -24,7 +24,7 @@ const App = () => {
     favorites?.forEach((item) => {
       dispatch(addToFavorites(item));
     })
-  }, [])
+  }, [dispatch])
 
   return (
     <div>

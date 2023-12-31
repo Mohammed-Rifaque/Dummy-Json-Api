@@ -296,7 +296,7 @@ body {
   /* justify-content: space-evenly; */
   width: 100%;
   gap: 30px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 
