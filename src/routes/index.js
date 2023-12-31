@@ -9,20 +9,15 @@ const ProductDetail = lazy(() => import("../pages/ProductDetail"));
 
 
 // Routes
-const HOME_ROUTES = [
-    {
-        index: true,
-        element: <ProductList />,
-    },
-];
 const MainRoutes = [
     {
         path: HOME,
         element: <HomeLayout />,
-
         children: [
-            ...HOME_ROUTES,
             {
+                index: true,
+                element: <ProductList />,
+            },            {
                 path: FAVORITE,
                 element: <Favorites />,
             },
