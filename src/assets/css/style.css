@@ -115,30 +115,3 @@ body {
   align-items: center;
 }
 
-.admin-dashboard .main-content.adm-dashboard {
-  background: #f7f8fb;
-  width: calc(100% - 10px);
-  padding: 40px 35px 60px 35px;
-  box-sizing: border-box;
-  overflow: auto;
-}
-
-.admin-dashboard .main-content.adm-dashboard {
-  padding: 30px 35px 72px;
-}
-
-.admin-dashboard .main-content.adm-dashboard::-webkit-scrollbar {
-  display: none;
-}
-
-.admin-dashboard .main-dashboard {
-  width: 100%;
-  /* height: calc(100vh); */
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1599px) {
-
-  .admin-dashboard .main-content.adm-dashboard {
-    padding: 30px 18px 30px 18px;
-  }
-}

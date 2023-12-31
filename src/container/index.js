@@ -5,10 +5,10 @@ import Footer from "../components/common/Footer";
 
 const HomeLayout = () => {
   return (
-    <div className="admin-dashboard">
+    <div className="section">
       <NavBar />
       <div
-        className="main-dashboard"
+        className="main"
       >
         <Outlet />
       </div>
