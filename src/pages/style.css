@@ -309,6 +309,14 @@ body {
 
 
 @media (max-width: 768px) {
+  .select-cetegory-text {
+    width: 40%;
+  }
+  .select-cetegory-text span{
+    color: #989898;
+    font-weight: bold
+  }
+
   .container {
     padding: 10px;
   }
@@ -354,7 +362,8 @@ body {
   }
 
   .filter-option {
-    width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .product-image {

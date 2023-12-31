@@ -53,7 +53,7 @@ const ProductList = () => {
     <div className="container">
       <div className="filter-container">
         <div className="filter-option">
-          {isMobile && <><span style={{ color: "#989898", fontWeight: "bold" }}>Select Category</span> </>}
+          {isMobile && <div className="select-cetegory-text"><span>Select Category</span> </div>}
           <div className="custom-select-wrapper">
             <select
               value={queries.category}
