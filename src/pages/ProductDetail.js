@@ -82,9 +82,8 @@ const ProductDetail = () => {
                 </button>
               </div>
               <Typography variant="body1">{ProductByID?.description}</Typography>
-              <Typography variant="body1">Discount: {ProductByID?.discountPercentage}%</Typography>
-              <Typography variant="body1">Rating: {ProductByID?.rating}</Typography>
-              <Typography variant="body1">Stock: {ProductByID?.stock}</Typography>
+              <Typography variant="body1" sx={{color:"green"}}>Discount: {ProductByID?.discountPercentage}%</Typography>
+              <Typography variant="body1" sx={{color:"red"}}>Stock: {ProductByID?.stock}</Typography>
               <Typography variant="body1">Brand: {ProductByID?.brand}</Typography>
               <Typography variant="body1">Category: {ProductByID?.category}</Typography>
             </div>
