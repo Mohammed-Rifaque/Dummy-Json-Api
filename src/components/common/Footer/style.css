@@ -210,7 +210,7 @@
   }
 
   .payment-type ul li {
-    width: 5%;
+    width: 10%;
     margin: unset;
     padding: 3px;
   }
@@ -257,8 +257,9 @@
   .customer-care ul {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .like-button-container {
