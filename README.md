@@ -1,4 +1,4 @@
-vercel https://dummy-json-api-ecommerce.vercel.app/
+vercel deployed link https://dummy-json-api-ecommerce.vercel.app/
 
 
 # Getting Started with Create React App

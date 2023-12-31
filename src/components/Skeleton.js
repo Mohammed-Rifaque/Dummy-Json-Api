@@ -1,7 +1,7 @@
 import React from 'react'
-import { Skeleton, Stack } from "@mui/material";
+import { Grid, Skeleton, Stack } from "@mui/material";
 
-const SkeletonCard = () => {
+export const SkeletonCard = () => {
   return (
     <div className="product-card">
     <Stack spacing={1}>
@@ -29,4 +29,29 @@ const SkeletonCard = () => {
   )
 }
 
-export default SkeletonCard
+
+export const ProductDetailSkeleton = () =>{
+  return (
+    <Grid container spacing={3}>
+    <Grid item xs={12} md={8} sx={{ display: "flex" }}>
+      <Grid item md={2} spacing={2} >
+        <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
+        <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
+        <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
+        <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
+        <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
+      </Grid>
+      <Grid item md={6}>
+        <Skeleton variant="rectangular" width={500} height={300} />
+      </Grid>
+    </Grid>
+    <Grid item xs={12} md={4}>
+      <Skeleton variant="text" width={200} />
+      <Skeleton variant="text" width={300} />
+      <Skeleton variant="text" width={250} />
+      <Skeleton variant="text" width={200} />
+      <Skeleton variant="text" width={150} />
+    </Grid>
+  </Grid>
+  )
+}

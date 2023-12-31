@@ -4,7 +4,7 @@ import NotFound from "../components/NotFound";
 
 const HomeLayout = lazy(() => import("../container"))
 const ProductList = lazy(() => import("../pages/ProductList"));
-const Favorites = lazy(() => import("../pages/FavProductList"));
+const Favorites = lazy(() => import("../pages/WishList"));
 const ProductDetail = lazy(() => import("../pages/ProductDetail"));
 
 

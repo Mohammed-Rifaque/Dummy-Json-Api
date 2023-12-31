@@ -6,7 +6,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { local } from '../helpers/projectHelpers';
 import { fetchProductsByIdApi } from "../api";
 import { useParams } from 'react-router-dom';
-import { Skeleton, Typography, Grid, Card, CardMedia, Rating, } from '@mui/material';
+import { Typography, Card, CardMedia, Rating, } from '@mui/material';
+import { ProductDetailSkeleton } from '../components/Skeleton';
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -38,28 +39,7 @@ const ProductDetail = () => {
   return (
     <div className="product-detail-container" style={{ padding: '16px' }}>
       {loading ? (
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={8} sx={{ display: "flex" }}>
-            <Grid item md={2} spacing={2} >
-              <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
-              <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
-              <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
-              <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
-              <Skeleton variant="rectangular" width={80} height={60} sx={{ marginBottom: "5px" }} />
-            </Grid>
-            <Grid item md={6}>
-              <Skeleton variant="rectangular" width={500} height={300} />
-            </Grid>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Skeleton variant="text" width={200} />
-            <Skeleton variant="text" width={300} />
-            <Skeleton variant="text" width={250} />
-            <Skeleton variant="text" width={200} />
-            <Skeleton variant="text" width={150} />
-
-          </Grid>
-        </Grid>
+        <ProductDetailSkeleton />
       ) : ProductByID ? (
         <>
           <Typography variant="h4" style={{ fontSize: '1.5rem' }}>

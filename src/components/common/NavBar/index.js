@@ -116,7 +116,6 @@ const NavBar = () => {
               className="text-field"
             />
           </div>
-          {/* Render "admin-profile" for laptops and PC screens */}
           <div className="admin-profile" id="admin-profile">
             <ul className="menus">
               <li onClick={() => handleMenuItemClick("/")}>Account</li>
